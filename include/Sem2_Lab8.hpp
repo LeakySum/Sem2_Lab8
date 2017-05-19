@@ -6,6 +6,7 @@ using namespace std;
 
 template <class T>
 class Complex {
+	public:
 	double x;
 	double y;
 	Complex& sum(T number)
@@ -50,7 +51,7 @@ class Complex {
 			return buf;
 		}
 	}
-public:
+
 	
 	Complex()
 	{
