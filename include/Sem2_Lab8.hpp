@@ -177,30 +177,3 @@ istream& operator >> (istream &in, Complex<T>& number)
 	return in;
 }
 
-int main() {
-	Complex<double> num1(3, 1);
-	Complex<double> num2(2, 2);
-		cout << "num1 output\n" << num1 << endl;
-		cout << "num2 output\n" << num2 << endl;
-		cout << "num1 += num2\n" << (num1 += num2) << endl;
-		cout << "num1 *= num2\n" << (num1 *= num2) << endl;
-		cout << "num1 *= 2\n" << (num1 *= 2) << endl;
-		cout << "num1 /= 10\n" << (num1 /= 10) << endl;
-	
-	cout << "num1 == num1" << endl;
-	if (num1 == num1)
-		cout << "works" << endl;
-	
-	cout << "testnig >> " << endl;
-	Complex<double> num(10, 25);
-	cout << "Print number" << endl;
-	cout << num;
-	cout << "Enter number" << endl;
-	cin >> num;
-	cout << "Print number" << endl;
-	cout << num;
-	system("pause");
-
-
-	return 0;
-}
