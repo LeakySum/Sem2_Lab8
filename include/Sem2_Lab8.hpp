@@ -146,10 +146,10 @@ public:
 		else
 			return 0;
 	}
-	template <class T>
-	friend ostream& operator<<(ostream&, const Complex<T>&);
-	template <class T>
-	friend istream& operator >> (istream&, Complex<T>&);
+	template <typename U>
+	friend ostream& operator<<(ostream&, const Complex<U>&);
+	template <typename U>
+	friend istream& operator >> (istream&, Complex<U>&);
 };
 
 template <class T>
