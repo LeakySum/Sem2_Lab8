@@ -5,7 +5,7 @@
 SCENARIO ("Constructor"){
 	Complex<double> num1(1, 5);
 	bool rv; 
-	if((num1.give_x() == 1) && (num1.give_y() == 5))
+	if((num1.x == 1) && (num1.y == 5))
 		rv = 1;
 	else 
 		rv = 0;
@@ -16,7 +16,7 @@ SCENARIO ("Addition(number)"){
   	int i = 3;
   	num1 += i;
 	bool rv;
-  	if((num1.give_x() == 4) && (num1.give_y() == 5))
+  	if((num1.x == 4) && (num1.y == 5))
 		rv = 1;
 	else 
 		rv = 0;
@@ -27,7 +27,7 @@ SCENARIO ("Addition(Complex)"){
  	Complex<double> num2(4, 6);
   	num1 = num1 + num2;
 	bool rv;
-	if((num1.give_x() == 5) && (num1.give_y() == 11))
+	if((num1.x == 5) && (num1.y == 11))
 		rv = 1;
 	else 
 		rv = 0;
@@ -38,7 +38,7 @@ SCENARIO ("Substraction(number)"){
   	int i = 3;
   	num1 -= i;
   	bool rv;
-	if((num1.give_x() == -2) && (num1.give_y() == 5))
+	if((num1.x == -2) && (num1.y == 5))
 		rv = 1;
 	else 
 		rv = 0;
@@ -49,7 +49,7 @@ SCENARIO ("Substraction(Complex)"){
   	Complex<double> num2(4, 6);
   	num1 = num1 - num2;
   	bool rv;
-	if((num1.give_x() == -3) && (num1.give_y() == -1))
+	if((num1.x == -3) && (num1.y == -1))
 		rv = 1;
 	else 
 		rv = 0;
@@ -60,7 +60,7 @@ SCENARIO ("Multiplication(number)"){
   	int i = 3;
   	num1 *= i;
   	bool rv;
-	if((num1.give_x() == 3) && (num1.give_y() == 15))
+	if((num1.x == 3) && (num1.y == 15))
 		rv = 1;
 	else 
 		rv = 0;
@@ -71,7 +71,7 @@ SCENARIO ("Multiplication(Complex)"){
   	Complex<double> num2(4, 6);
   	num1 = num1 * num2;
   	bool rv;
-	if((num1.give_x() == -26) && (num1.give_y() == 26))
+	if((num1.x == -26) && (num1.y == 26))
 		rv = 1;
 	else 
 		rv = 0;
@@ -82,7 +82,7 @@ SCENARIO ("Division(number)"){
   	int i = 4;
   	num1 /= i;
   	bool rv;
-	if((num1.give_x() == 0.25) && (num1.give_y() == 1.25))
+	if((num1.x == 0.25) && (num1.y == 1.25))
 		rv = 1;
 	else 
 		rv = 0;
@@ -93,7 +93,7 @@ SCENARIO ("MakeEqualTo(Complex)"){
   	Complex<double> num2(2, 3);
   	num1 = num2;
   	bool rv;
-	if((num1.give_x() == 2) && (num1.give_y() == 3))
+	if((num1.x == 2) && (num1.y == 3))
 		rv = 1;
 	else 
 		rv = 0;
