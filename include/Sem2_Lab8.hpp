@@ -22,7 +22,7 @@ class Complex {
 
 	Complex& sub(const Complex& number)
 	{
-		Complex buf(x - numberx, y - number.y);
+		Complex buf(x - number.x, y - number.y);
 		return buf;
 	}
 	Complex& sub(T number)
